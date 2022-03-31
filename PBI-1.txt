@@ -1,0 +1,62 @@
+Acceptance Criteria:
+As a User, When I want to Enquire about Home Insurance - 
+Then Application must let user to submit the Basic details in the application and submit the same.
+
+Requirement : Create a Link Home Insurance under Insurance products Dropdown
+User on clicking the same moves to Home Insurance Page,
+
+Below Objects available in the Screen,
+1. Label Object        -   "Tell us your Details" 
+2. Name Editbox      -   Minimum 3 Chars ~ Max 50 Characters  ( Special Chars  & Numbers - Not Allowed - Spaces allowed in between characters
+ Only one Space is allowed between chars)
+3. Mobile Editbox    -   Exact 10 Digits (Indian Mob No) - (8Already Existing Mobile No cannot be used)
+4. Email Editbox      -   "@" & "." present in the ascending order with some values in between - Example (123@yu.po)
+5. Submit Button      -   Only Enables after giving Valid details
+
+If Invalid Values entered - Error text below edit box in screen "Name is Invalid & Mobile is Invalid & Email is Invalid"
+ for corresponding editboxes. 
+
+User should be able to give Valid details and submit the same to save in the backend for getting Enquiry Call by Operations 
+ExecutiveTeam
+"Submit Successful" Font appears below Submit Button and the Values gets automatically removed also Submit button disables.
+
+"Privacy Policy" and "Terms of Use" Links available below submit button for the Users to read the below items,
+On Clicked, the above two links should route to Items mentioned below,
+A. Privacy Policy
+B. Intellectual Property policy
+C. License
+D. Terms of Use
+E. Disclaimer
+F.  ISNP
+
+Below Columns to be checked in Database : Table Name : HOMEINS_ENQ
+	NAME 		- VARCHAR  - 50 LENGTH
+	MOB    		- NUM            - 10 LENGTH
+	EMAIL 		- VARCHAR  - 100 LENGTH
+	ENQUIRYID 	- VARCHAR  - 100 LENGTH
+
+The Above Functioality to be compatible in GC,Mozilla & IE
+
+
+SELECT * FROM HOMEINS_ENQ WHERE NAME = 'ABC';
+
+prabhafeb2022@gmail.com
+
+prabhafeb2022.atlassian.net
+
+https://prabhafeb2022.atlassian.net/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
